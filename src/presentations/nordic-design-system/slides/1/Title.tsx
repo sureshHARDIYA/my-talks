@@ -18,7 +18,7 @@ const DESTitle = () => {
           backgroundColor={trygTheme.brand}
           color="white"
         >
-          Design System Echosystem
+          Nordic Design System Echosystem
         </Heading>
         <Heading margin="0px" color={trygTheme.grey40} fontSize="25px">
           <kbd>
