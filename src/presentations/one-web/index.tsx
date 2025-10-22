@@ -1,22 +1,16 @@
-import { Deck, FlexBox } from "spectacle";
+import { Deck } from "spectacle";
 
 import theme from "@/utils/theme";
-import { trygTheme } from "@/theme";
 import template from "@/theme/template";
 import { TrygSlide } from "@/components/TrygSlide";
+import OneWebTitle from "./slides/1/Title";
 
 export const OneWeb = () => {
   return (
     <Deck template={template} theme={theme}>
       {/* Title Slide  1 */}
       <TrygSlide backgroundColor="white">
-        <FlexBox
-          height="100%"
-          flexDirection="column"
-          backgroundColor={trygTheme.grey0}
-        >
-          comign soon...
-        </FlexBox>
+        <OneWebTitle />
       </TrygSlide>
     </Deck>
   );
