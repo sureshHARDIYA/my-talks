@@ -37,6 +37,11 @@ const presentations = [
     title: "One Portal Web Architecture",
     path: "/one-portal-web-architecture",
   },
+  {
+    id: 7,
+    title: "Let us re-act",
+    path: "/react-fundamentals",
+  },
 ];
 
 export const MainGate = () => {
