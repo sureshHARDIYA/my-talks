@@ -65,8 +65,8 @@ const CorrectStateOwnership = () => {
             <line x1="135" y1="70" x2="160" y2="88" stroke="#9ca3af" strokeWidth="1.2" />
             <rect x="15" y="88" width="40" height="22" rx="4" fill="#f3f4f6" stroke="#9ca3af" strokeWidth="1.2" />
             <text x="35" y="102" textAnchor="middle" fill="#374151" fontSize="8">Header</text>
-            <rect x="65" y="88" width="70" height="22" rx="4" fill="#bbf7d0" stroke="#16a34a" strokeWidth="2" />
-            <text x="100" y="103" textAnchor="middle" fill="#166534" fontSize="9" fontWeight="700">ProductList</text>
+            <rect x="60" y="88" width="80" height="22" rx="4" fill="#bbf7d0" stroke="#16a34a" strokeWidth="2" />
+            <text x="100" y="99" textAnchor="middle" dominantBaseline="middle" fill="#166534" fontSize="8" fontWeight="700">ProductList</text>
             <rect x="145" y="88" width="40" height="22" rx="4" fill="#f3f4f6" stroke="#9ca3af" strokeWidth="1.2" />
             <text x="165" y="102" textAnchor="middle" fill="#374151" fontSize="8">Footer</text>
             <rect x="90" y="115" width="20" height="12" rx="3" fill="#bbf7d0" stroke="#16a34a" strokeWidth="1.2" />

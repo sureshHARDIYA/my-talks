@@ -34,8 +34,8 @@ const Title = () => {
               href="mailto:suresh.mukhiya@leroyseafoodgroup.com"
               style={{ color: leroyTheme.textLinkBlue, textDecoration: "underline" }}
             >
-              suresh.mukhiya@tryg.no
-            </a>
+                suresh.mukhiya@leroyseafoodgroup.com
+              </a>
           </kbd>
         </Heading>
       </FlexBox>

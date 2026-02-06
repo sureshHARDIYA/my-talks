@@ -30,6 +30,10 @@ const Agenda = () => {
             <TTD>DOM & structure</TTD>
             <TTD>Let React own the DOM; file and folder habits</TTD>
           </TTR>
+          <TTR>
+            <TTD>Takeaways & resources</TTD>
+            <TTD>Summary + links to keep learning</TTD>
+          </TTR>
         </tbody>
       </TTable>
     </Appear>

@@ -4,23 +4,29 @@ import theme from "@/utils/leroySpectacleTheme";
 import template from "@/theme/leroyTemplate";
 import { TrygSlide } from "@/components/TrygSlide";
 
-import Title from "./slides/1/Title";
-import WebsiteRendered from "./slides/18/WebsiteRendered";
-import BrowserRenderingProcess from "./slides/19/BrowserRenderingProcess";
-import PhpVsReact from "./slides/20/PhpVsReact";
-import TraditionalVsSpa from "./slides/20/TraditionalVsSpa";
-import TheBigQuestion from "./slides/22/TheBigQuestion";
-import ReactMentalModel from "./slides/22/ReactMentalModel";
-import VirtualDomIntro from "./slides/21/VirtualDomIntro";
-import VirtualDomComparison from "./slides/21/VirtualDomComparison";
-import WhenComponentsRerender from "./slides/23/WhenComponentsRerender";
-import PropsDrillingProblem from "./slides/24/PropsDrillingProblem";
-import BetterSolutions from "./slides/25/BetterSolutions";
-import PropsDrillingVsStateOwnership from "./slides/26/PropsDrillingVsStateOwnership";
-import CorrectStateOwnership from "./slides/26/CorrectStateOwnership";
-import Agenda from "./slides/2/Agenda";
-import Summary from "./slides/16/Summary";
-import ApiCallsSideEffects from "./slides/27/ApiCallsSideEffects";
+import Title from "./slides/01/Title";
+import WebsiteRendered from "./slides/03/WebsiteRendered";
+import BrowserRenderingProcess from "./slides/04/BrowserRenderingProcess";
+import PhpVsReact from "./slides/05/PhpVsReact";
+import TraditionalVsSpa from "./slides/06/TraditionalVsSpa";
+import WhySpaReact from "./slides/07/WhySpaReact";
+import TheBigQuestion from "./slides/08/TheBigQuestion";
+import ReactMentalModel from "./slides/09/ReactMentalModel";
+import VirtualDomIntro from "./slides/10/VirtualDomIntro";
+import VirtualDomComparison from "./slides/11/VirtualDomComparison";
+import WhenComponentsRerender from "./slides/12/WhenComponentsRerender";
+import PropsDrillingProblem from "./slides/13/PropsDrillingProblem";
+import BetterSolutions from "./slides/14/BetterSolutions";
+import PropsDrillingVsStateOwnership from "./slides/15/PropsDrillingVsStateOwnership";
+import CorrectStateOwnership from "./slides/16/CorrectStateOwnership";
+import Agenda from "./slides/02/Agenda";
+import Summary from "./slides/22/Summary";
+import SummaryPart2 from "./slides/23/SummaryPart2";
+import ApiCallsSideEffects from "./slides/17/ApiCallsSideEffects";
+import DomManipulationNuclearOption from "./slides/21/DomManipulationNuclearOption";
+import UseEffectDependencies from "./slides/18/UseEffectDependencies";
+import UseEffectAntiPatterns from "./slides/19/UseEffectAntiPatterns";
+import RecommendedApproachTanstack from "./slides/20/RecommendedApproachTanstack";
 
 
 const ReactFundamentals = () => {
@@ -42,12 +48,16 @@ const ReactFundamentals = () => {
         <BrowserRenderingProcess />
       </TrygSlide>
 
-      <TrygSlide title="Single page application vs traditional applications">
+      <TrygSlide title="New Elements to the page">
         <PhpVsReact />
       </TrygSlide>
 
       <TrygSlide title="When something changes: traditional vs SPA">
         <TraditionalVsSpa />
+      </TrygSlide>
+
+      <TrygSlide title="Why React?">
+        <WhySpaReact />
       </TrygSlide>
 
       <TrygSlide title="The Big Question">
@@ -87,12 +97,32 @@ const ReactFundamentals = () => {
         <CorrectStateOwnership />
       </TrygSlide>
 
-      <TrygSlide title="API Calls & Side Effects">
+      <TrygSlide title="Side-Effect & useEffect in React">
         <ApiCallsSideEffects />
       </TrygSlide>
 
-      <TrygSlide title="Takeaways & resources">
+      <TrygSlide title="Side-Effect & useEffect in React">
+        <UseEffectDependencies />
+      </TrygSlide>
+
+      <TrygSlide title="Side-Effect & useEffect in React">
+        <UseEffectAntiPatterns />
+      </TrygSlide>
+
+      <TrygSlide title="Recommended Approach - tanstack query">
+        <RecommendedApproachTanstack />
+      </TrygSlide>
+
+      <TrygSlide title="Touching the DOM: Nuclear way">
+        <DomManipulationNuclearOption />
+      </TrygSlide>
+
+      <TrygSlide title="Takeaways & resources (1/2)">
         <Summary />
+      </TrygSlide>
+
+      <TrygSlide title="Takeaways & resources (2/2)">
+        <SummaryPart2 />
       </TrygSlide>
     </Deck>
   );

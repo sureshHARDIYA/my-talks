@@ -71,8 +71,8 @@ const PropsDrillingVsStateOwnership = () => {
             <rect x="15" y="88" width="40" height="22" rx="4" fill="#f3f4f6" stroke="#9ca3af" strokeWidth="1.2" />
             <text x="35" y="102" textAnchor="middle" fill="#374151" fontSize="8">Header</text>
 
-            <rect x="64" y="88" width="70" height="22" rx="4" fill="#fca5a5" stroke="#dc2626" strokeWidth="2" />
-            <text x="100" y="103" textAnchor="middle" fill="#7f1d1d" fontSize="9" fontWeight="700">ProductList</text>
+            <rect x="60" y="88" width="80" height="22" rx="4" fill="#fca5a5" stroke="#dc2626" strokeWidth="2" />
+            <text x="100" y="99" textAnchor="middle" dominantBaseline="middle" fill="#7f1d1d" fontSize="8" fontWeight="700">ProductList</text>
 
             <rect x="145" y="88" width="40" height="22" rx="4" fill="#f3f4f6" stroke="#9ca3af" strokeWidth="1.2" />
             <text x="165" y="102" textAnchor="middle" fill="#374151" fontSize="8">Footer</text>
