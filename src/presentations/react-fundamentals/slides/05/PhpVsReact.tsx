@@ -1,9 +1,7 @@
 import { Box, useSteps } from "spectacle";
 import { motion, AnimatePresence } from "framer-motion";
-import {
-  BrowserMockup,
-  NEW_NODE_BORDER_COLOR_ORANGE,
-} from "../../components/BrowserMockup";
+import { BrowserMockup } from "../../components/BrowserMockup";
+import { NEW_NODE_BORDER_COLOR_ORANGE } from "../../components/browserMockupConstants";
 import { DOMTreeSVG } from "../../components/DOMTreeSVG";
 import { leroyTheme } from "@/theme/leroy";
 

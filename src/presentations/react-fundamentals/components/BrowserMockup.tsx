@@ -1,4 +1,5 @@
 import { leroyTheme } from "@/theme/leroy";
+import { NEW_NODE_BORDER_COLOR } from "./browserMockupConstants";
 
 type Props = {
   /** Show an extra paragraph with a border (e.g. "new" content). */
@@ -11,15 +12,13 @@ type Props = {
   children?: React.ReactNode;
 };
 
-const defaultBorderColor = leroyTheme.linkBlue;
-
 /**
  * Reusable browser window mockup: chrome (traffic lights, address bar),
  * content area. Use for “how a page looks” or “adding a paragraph” slides.
  */
 export function BrowserMockup({
   showNewParagraph = false,
-  newParagraphBorderColor = defaultBorderColor,
+  newParagraphBorderColor = NEW_NODE_BORDER_COLOR,
   url = "leroyseafood.com",
   children,
 }: Props) {
@@ -117,8 +116,3 @@ export function BrowserMockup({
     </div>
   );
 }
-
-export const NEW_NODE_BORDER_COLOR = defaultBorderColor;
-
-/** Orange highlight for “new” nodes (e.g. client vs server slide). */
-export const NEW_NODE_BORDER_COLOR_ORANGE = "#ea580c";

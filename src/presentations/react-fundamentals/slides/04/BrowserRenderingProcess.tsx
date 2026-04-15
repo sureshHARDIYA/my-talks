@@ -14,7 +14,7 @@ const processSteps = [
 const reveal = {
   initial: { opacity: 0, y: 12 },
   animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.35, ease: "easeOut" },
+  transition: { duration: 0.35, ease: "easeOut" as const },
 };
 
 const TOTAL_STEPS = 8; // 0: title only | 1: left title | 2–6: process steps | 7: right column
@@ -85,7 +85,7 @@ const BrowserRenderingProcess = () => {
                 style={{ minWidth: 280 }}
                 initial={{ opacity: 0, x: 24 }}
                 animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.4, ease: "easeOut" }}
+                transition={{ duration: 0.4, ease: "easeOut" as const }}
               >
                 <p className="text-sm mb-2" style={{ color: leroyTheme.grey80 }}>
                   DOM tree (Welcome to Lerøy)

@@ -1,83 +1,117 @@
-import { Deck, FlexBox, Heading } from "spectacle";
-
-import theme from "@/utils/theme";
-import { trygTheme } from "@/theme";
-import template from "@/theme/template";
-import { TrygSlide } from "@/components/TrygSlide";
+import { Deck, FlexBox, Heading, Slide } from "spectacle";
 import { Link } from "react-router-dom";
+
+import { leroyTheme } from "@/theme/leroy";
+import leroyTemplate from "@/theme/leroyTemplate";
+import leroySpectacleTheme from "@/utils/leroySpectacleTheme";
+
+type Presentation = {
+  id: string;
+  title: string;
+  path: string;
+  CURRENT?: boolean;
+};
 
 const presentations = [
   {
-    id: 1,
+    id: "01",
     title: "Web Components",
     path: "/web-components",
   },
   {
-    id: 2,
+    id: "02",
     title: "Design System Echosystem",
     path: "/design-system-echosystem",
   },
   {
-    id: 3,
+    id: "03",
     title: "Nordic Design System",
     path: "/nordic-design-system",
   },
   {
-    id: 4,
+    id: "04",
     title: "Universal Design",
     path: "/universal-design",
   },
   {
-    id: 5,
+    id: "05",
     title: "Universal Design Checklist",
     path: "/universal-design-checklist",
   },
   {
-    id: 6,
+    id: "06",
     title: "One Portal Web Architecture",
     path: "/one-portal-web-architecture",
   },
   {
-    id: 7,
-    title: "Let us re-act",
+    id: "07",
+    title: "Leroy React Fundamentals",
     path: "/react-fundamentals",
+    CURRENT: true,
   },
-];
+] satisfies Presentation[];
 
 export const MainGate = () => {
   return (
-    <Deck template={template} theme={theme}>
-      {/* Title Slide  1 */}
-      <TrygSlide backgroundColor="white">
+    <Deck template={leroyTemplate} theme={leroySpectacleTheme}>
+      <Slide backgroundColor={leroyTheme.grey0}>
         <FlexBox
           height="100%"
           flexDirection="column"
-          backgroundColor={trygTheme.grey0}
+          alignItems="stretch"
+          justifyContent="flex-start"
+          style={{
+            padding: "2rem",
+            gap: "2rem",
+          }}
         >
           <Heading
-            margin="1rem"
-            fontSize="h3"
-            backgroundColor={trygTheme.grey0}
-            color="black"
+            color={leroyTheme.textBlue}
+            fontSize="h2"
+            margin="0"
+            textAlign="left"
           >
             Main Gate
           </Heading>
+
           <div
             style={{
-              display: "flex",
-              justifyContent: "start",
-              flexDirection: "column",
+              display: "grid",
+              gridTemplateColumns: "repeat(3, minmax(0, 1fr))",
               gap: "1rem",
+              width: "100%",
             }}
           >
-            {presentations?.map((item) => (
-              <p-button-pure key={item.id}>
-                <Link to={item.path}>{item.title}</Link>
-              </p-button-pure>
+            {presentations.map((item) => (
+              <Link
+                key={item.id}
+                to={item.path}
+                style={{
+                  alignItems: "center",
+                  backgroundColor: item.CURRENT
+                    ? leroyTheme.linkBlue
+                    : leroyTheme.white,
+                  border: `1px solid ${
+                    item.CURRENT ? leroyTheme.linkBlue : leroyTheme.grey20
+                  }`,
+                  borderRadius: "16px",
+                  color: item.CURRENT ? leroyTheme.white : leroyTheme.textBlue,
+                  display: "flex",
+                  fontSize: "1.1rem",
+                  fontWeight: 700,
+                  justifyContent: "center",
+                  minHeight: "120px",
+                  padding: "1rem",
+                  textAlign: "center",
+                  textDecoration: "none",
+                }}
+              >
+                {item.title}
+              </Link>
             ))}
           </div>
         </FlexBox>
-      </TrygSlide>
+      </Slide>
     </Deck>
   );
 };
