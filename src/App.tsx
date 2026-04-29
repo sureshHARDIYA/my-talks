@@ -9,6 +9,7 @@ import UniversalDesignChecklist from "./presentations/uu-checklist";
 import NordicDesignSystem from "./presentations/nordic-design-system";
 import ReactFundamentals from "./presentations/leroy/react-fundamentals";
 import MicrofrontendArchitectureInLeroy from "./presentations/leroy/microfrontend-architecture";
+import AiDrivenCoding from "./presentations/ai-driven-coding";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           path="/microfrontend-architecture-in-leroy"
           element={<MicrofrontendArchitectureInLeroy />}
         />
+        <Route path="/ai-driven-coding" element={<AiDrivenCoding />} />
       </Routes>
     </BrowserRouter>
   );

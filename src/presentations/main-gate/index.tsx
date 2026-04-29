@@ -52,6 +52,11 @@ const presentations = [
     id: "08",
     title: "Microfrontend Architecture in Lerøy",
     path: "/microfrontend-architecture-in-leroy",
+  },
+  {
+    id: "09",
+    title: "AI-Driven Software Development",
+    path: "/ai-driven-coding",
     CURRENT: true,
   },
 ] satisfies Presentation[];
