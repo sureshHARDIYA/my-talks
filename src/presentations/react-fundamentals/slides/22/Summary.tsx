@@ -1,4 +1,4 @@
-import { Appear, Box } from "spectacle";
+import { Box, useSteps } from "spectacle";
 import { leroyTheme } from "@/theme/leroy";
 
 const codeStyle = {
@@ -46,46 +46,53 @@ const takeaways = [
 ];
 
 const Summary = () => {
+  const { step, placeholder } = useSteps(takeaways.length + 1);
+
   return (
     <Box>
-      <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "14px" }}>
-        <tbody>
-          {takeaways.map((section, index) => (
-            <Appear key={section.title} priority={index + 1} tagName="tr">
-              <td
-                style={{
-                  padding: "10px",
-                  width: "30%",
-                  verticalAlign: "top",
-                  color: leroyTheme.black,
-                  fontWeight: 700,
-                  borderBottom: "1px solid #e5e7eb",
-                  backgroundColor: index % 2 === 0 ? "#f8fafc" : "#ffffff",
-                }}
-              >
-                {section.title}
-              </td>
-              <td
-                style={{
-                  padding: "10px",
-                  verticalAlign: "top",
-                  borderBottom: "1px solid #e5e7eb",
-                  backgroundColor: index % 2 === 0 ? "#f8fafc" : "#ffffff",
-                }}
-              >
-                <ul style={{ margin: 0, paddingLeft: "1.2rem", color: leroyTheme.black }}>
-                  {section.items.map((item, itemIndex) => (
-                    <li key={itemIndex} style={{ marginBottom: "6px" }}>
-                      <span style={{ fontWeight: 700 }}>{`R${itemIndex + 1} — `}</span>
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </td>
-            </Appear>
-          ))}
-        </tbody>
-      </table>
+      {placeholder}
+      {step >= 1 && (
+        <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "14px" }}>
+          <tbody>
+            {takeaways.map((section, index) =>
+              step >= index + 1 ? (
+                <tr key={section.title}>
+                  <td
+                    style={{
+                      padding: "10px",
+                      width: "30%",
+                      verticalAlign: "top",
+                      color: leroyTheme.black,
+                      fontWeight: 700,
+                      borderBottom: "1px solid #e5e7eb",
+                      backgroundColor: index % 2 === 0 ? "#f8fafc" : "#ffffff",
+                    }}
+                  >
+                    {section.title}
+                  </td>
+                  <td
+                    style={{
+                      padding: "10px",
+                      verticalAlign: "top",
+                      borderBottom: "1px solid #e5e7eb",
+                      backgroundColor: index % 2 === 0 ? "#f8fafc" : "#ffffff",
+                    }}
+                  >
+                    <ul style={{ margin: 0, paddingLeft: "1.2rem", color: leroyTheme.black }}>
+                      {section.items.map((item, itemIndex) => (
+                        <li key={itemIndex} style={{ marginBottom: "6px" }}>
+                          <span style={{ fontWeight: 700 }}>{`R${itemIndex + 1} — `}</span>
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  </td>
+                </tr>
+              ) : null
+            )}
+          </tbody>
+        </table>
+      )}
     </Box>
   );
 };

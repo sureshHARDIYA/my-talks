@@ -8,6 +8,7 @@ import DesignEchoSystem from "./presentations/design-echo-system";
 import UniversalDesignChecklist from "./presentations/uu-checklist";
 import NordicDesignSystem from "./presentations/nordic-design-system";
 import ReactFundamentals from "./presentations/leroy/react-fundamentals";
+import MicrofrontendArchitectureInLeroy from "./presentations/leroy/microfrontend-architecture";
 
 function App() {
   return (
@@ -27,6 +28,10 @@ function App() {
         />
         <Route path="/one-portal-web-architecture" element={<OneWeb />} />
         <Route path="/react-fundamentals" element={<ReactFundamentals />} />
+        <Route
+          path="/microfrontend-architecture-in-leroy"
+          element={<MicrofrontendArchitectureInLeroy />}
+        />
       </Routes>
     </BrowserRouter>
   );

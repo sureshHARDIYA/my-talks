@@ -1,8 +1,14 @@
 {
-  "name": "web-component",
+  "name": "my-talks",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
+  "author": {
+    "name": "Suresh Kumar Mukhiya",
+    "email": "itsmeskm99@gmail.com",
+    "url": "https://www.skmukhiya.com.np"
+  },
+  "homepage": "https://www.skmukhiya.com.np",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",

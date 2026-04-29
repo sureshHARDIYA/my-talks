@@ -47,6 +47,11 @@ const presentations = [
     id: "07",
     title: "Leroy React Fundamentals",
     path: "/react-fundamentals",
+  },
+  {
+    id: "08",
+    title: "Microfrontend Architecture in Lerøy",
+    path: "/microfrontend-architecture-in-leroy",
     CURRENT: true,
   },
 ] satisfies Presentation[];
