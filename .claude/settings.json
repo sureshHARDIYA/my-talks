@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh repo *)",
+      "WebFetch(domain:github.com)",
+      "Bash(ruflo --version)",
+      "Bash(ruflo --help)",
+      "Bash(ruflo doctor *)"
+    ]
+  }
+}

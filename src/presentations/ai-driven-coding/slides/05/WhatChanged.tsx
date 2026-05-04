@@ -2,30 +2,42 @@ import { Appear, Box } from "spectacle";
 
 import { leroyTheme } from "@/theme/leroy";
 
-const dimensions = [
+interface Dimension {
+  index: string;
+  keyword: string;
+  rest: string;
+  body: string;
+  accent: string;
+}
+
+const dimensions: Dimension[] = [
   {
-    label: "HOW code gets written",
+    index: "01",
+    keyword: "HOW",
+    rest: "code gets written",
     body: "From autocomplete → chat-based coding → agents that ship entire features.",
-    color: "#0d6efd",
-    bg: "#eef4ff",
+    accent: "#1e3a8a",
   },
   {
-    label: "WHO writes it",
+    index: "02",
+    keyword: "WHO",
+    rest: "writes it",
     body: "Non-developers shipping real software. The PM/engineer line is blurring.",
-    color: "#22c55e",
-    bg: "#f0fdf4",
+    accent: "#0f766e",
   },
   {
-    label: "HOW teams are built",
+    index: "03",
+    keyword: "HOW",
+    rest: "teams are built",
     body: "Smaller teams. Higher leverage per engineer. Faster prototype-to-production.",
-    color: "#f59e0b",
-    bg: "#fffbeb",
+    accent: "#b45309",
   },
   {
-    label: "WHAT gets valued",
+    index: "04",
+    keyword: "WHAT",
+    rest: "gets valued",
     body: "Syntax is easy to generate. Judgment, taste, and verification are premium.",
-    color: "#dc2626",
-    bg: "#fef2f2",
+    accent: "#991b1b",
   },
 ];
 
@@ -37,8 +49,11 @@ const WhatChanged = () => {
           style={{
             textAlign: "center",
             color: leroyTheme.grey60,
-            fontSize: "1rem",
-            marginBottom: "1rem",
+            fontSize: "0.95rem",
+            letterSpacing: "0.14em",
+            textTransform: "uppercase",
+            fontWeight: 600,
+            marginBottom: "1.25rem",
           }}
         >
           Four dimensions, all shifting at once
@@ -53,36 +68,101 @@ const WhatChanged = () => {
         }}
       >
         {dimensions.map((d, idx) => (
-          <Appear key={d.label} priority={idx + 2}>
-            <div
+          <Appear key={d.index} priority={idx + 2}>
+            <article
               style={{
-                padding: "1rem 1.1rem",
-                background: d.bg,
-                border: `2px solid ${d.color}`,
-                borderRadius: 10,
+                position: "relative",
+                padding: "1.1rem 1.25rem 1rem",
+                background: leroyTheme.white,
+                border: `1px solid ${leroyTheme.grey20}`,
+                borderRadius: 12,
+                boxShadow:
+                  "0 1px 0 rgba(15, 23, 42, 0.02), 0 8px 20px -12px rgba(15, 23, 42, 0.18)",
+                overflow: "hidden",
               }}
             >
-              <div
+              <span
                 style={{
-                  fontSize: "0.95rem",
-                  fontWeight: 800,
-                  color: d.color,
-                  marginBottom: "0.5rem",
-                  letterSpacing: "0.04em",
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  width: "44px",
+                  height: "3px",
+                  background: d.accent,
+                }}
+              />
+
+              <header
+                style={{
+                  display: "flex",
+                  alignItems: "baseline",
+                  gap: "0.65rem",
+                  marginBottom: "0.6rem",
                 }}
               >
-                {d.label}
-              </div>
+                <span
+                  style={{
+                    fontFamily:
+                      "'SF Mono', ui-monospace, SFMono-Regular, Menlo, monospace",
+                    fontSize: "0.7rem",
+                    fontWeight: 700,
+                    letterSpacing: "0.12em",
+                    color: leroyTheme.grey40,
+                  }}
+                >
+                  {d.index}
+                </span>
+                <span
+                  aria-hidden
+                  style={{
+                    width: 4,
+                    height: 4,
+                    borderRadius: "50%",
+                    background: d.accent,
+                    transform: "translateY(-2px)",
+                  }}
+                />
+                <h3
+                  style={{
+                    margin: 0,
+                    fontSize: "1.15rem",
+                    fontWeight: 800,
+                    letterSpacing: "-0.01em",
+                    lineHeight: 1.15,
+                  }}
+                >
+                  <span style={{ color: d.accent }}>{d.keyword}</span>
+                  <span
+                    style={{
+                      color: leroyTheme.grey60,
+                      fontWeight: 500,
+                      marginLeft: "0.4rem",
+                    }}
+                  >
+                    {d.rest}
+                  </span>
+                </h3>
+              </header>
+
               <div
                 style={{
+                  height: 1,
+                  background: leroyTheme.grey10,
+                  margin: "0 0 0.7rem",
+                }}
+              />
+
+              <p
+                style={{
+                  margin: 0,
                   fontSize: "0.95rem",
                   color: leroyTheme.grey80,
-                  lineHeight: 1.5,
+                  lineHeight: 1.55,
                 }}
               >
                 {d.body}
-              </div>
-            </div>
+              </p>
+            </article>
           </Appear>
         ))}
       </div>
