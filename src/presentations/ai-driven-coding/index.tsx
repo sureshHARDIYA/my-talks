@@ -19,7 +19,7 @@ import PhdBucketsIntro from './slides/14/PhdBucketsIntro';
 import AiFluency from './slides/15/AiFluency';
 import WhatAgentsCantDo from './slides/16/WhatAgentsCantDo';
 import ShipThings from './slides/17/ShipThings';
-import PhdAdvantage from './slides/18/PhdAdvantage';
+import KeepTheCraft from './slides/18/KeepTheCraft';
 import OneLastThought from './slides/19/OneLastThought';
 import QnA from './slides/20/QnA';
 import CaseStudyIntro from './slides/08/CaseStudyIntro';
@@ -103,9 +103,9 @@ const AiDrivenCoding = () => {
           <ShipThings />
         </TrygSlide>
 
-        {/* Slide 18 - PhD advantage */}
-        <TrygSlide title='Your PhD advantage'>
-          <PhdAdvantage />
+        {/* Slide 18a - AI as a partner, not a replacement */}
+        <TrygSlide title='AI boosts development — it does not take over'>
+          <KeepTheCraft />
         </TrygSlide>
 
         {/* Slide 19 - One last thought */}

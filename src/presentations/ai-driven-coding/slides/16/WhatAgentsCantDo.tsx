@@ -4,28 +4,28 @@ import { leroyTheme } from "@/theme/leroy";
 
 const items = [
   {
-    title: "Writing great specs",
-    body: "Our Feature Agent is only as good as the acceptance criteria it gets. Clear thinking is the new bottleneck.",
+    title: "Writing great specifications",
+    body: "Our Feature Agent is only as good as the acceptance criteria it receives — the clear, testable conditions a feature must meet. Sharp thinking is the new bottleneck.",
     color: "#0d6efd",
   },
   {
-    title: "System design & judgment",
-    body: "Architecture, trade-offs, failure modes — taste still matters.",
+    title: "System design and engineering judgment",
+    body: "Choosing the right architecture, weighing trade-offs, and anticipating how a system can fail — human judgment still matters.",
     color: "#22c55e",
   },
   {
     title: "Research rigor",
-    body: "Formulating problems. Designing evals. Reading results. This IS your PhD.",
+    body: "Formulating problems. Designing evaluations. Reading results carefully. This IS your PhD (Doctor of Philosophy).",
     color: "#f59e0b",
   },
   {
-    title: "Domain expertise",
-    body: "Your PhD subject is your moat. Depth in a field agents can't bluff through.",
+    title: "Deep domain expertise",
+    body: "Your PhD subject is your lasting advantage — depth in a field that agents cannot fake or shortcut their way through.",
     color: "#dc0000",
   },
   {
     title: "Communication",
-    body: "AI amplifies good thinkers. Writing, storytelling, teaching — these compound.",
+    body: "AI amplifies good thinkers. Writing, storytelling, and teaching are skills that grow more valuable the more you use them.",
     color: "#8b5cf6",
   },
 ];

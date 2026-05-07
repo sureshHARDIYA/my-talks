@@ -23,36 +23,7 @@ const buckets = [
 const PhdBucketsIntro = () => {
   return (
     <Box padding="0.5rem 2rem">
-      <Appear priority={1}>
-        <div
-          style={{
-            textAlign: "center",
-            fontSize: "0.8rem",
-            fontWeight: 700,
-            letterSpacing: "0.18em",
-            color: leroyTheme.grey60,
-            marginBottom: "0.4rem",
-          }}
-        >
-          FOR YOU
-        </div>
-      </Appear>
-
-      <Appear priority={2}>
-        <div
-          style={{
-            textAlign: "center",
-            fontSize: "1.6rem",
-            fontWeight: 800,
-            color: leroyTheme.textBlue,
-            marginBottom: "0.4rem",
-          }}
-        >
-          What PhD students should do
-        </div>
-      </Appear>
-
-      <Appear priority={3}>
+      <Appear priority={0}>
         <div
           style={{
             textAlign: "center",

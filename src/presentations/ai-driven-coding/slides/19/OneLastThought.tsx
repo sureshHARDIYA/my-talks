@@ -9,21 +9,6 @@ const OneLastThought = () => {
         <div
           style={{
             textAlign: "center",
-            fontSize: "0.85rem",
-            fontWeight: 700,
-            letterSpacing: "0.18em",
-            color: leroyTheme.grey60,
-            marginBottom: "1rem",
-          }}
-        >
-          ONE LAST THOUGHT
-        </div>
-      </Appear>
-
-      <Appear priority={2}>
-        <div
-          style={{
-            textAlign: "center",
             fontSize: "1.5rem",
             fontWeight: 800,
             color: leroyTheme.textBlue,
@@ -35,7 +20,7 @@ const OneLastThought = () => {
         </div>
       </Appear>
 
-      <Appear priority={3}>
+      <Appear priority={2}>
         <div
           style={{
             textAlign: "center",
@@ -51,7 +36,7 @@ const OneLastThought = () => {
         </div>
       </Appear>
 
-      <Appear priority={4}>
+      <Appear priority={3}>
         <div
           style={{
             padding: "1.25rem 1.5rem",
@@ -73,7 +58,7 @@ const OneLastThought = () => {
         </div>
       </Appear>
 
-      <Appear priority={5}>
+      <Appear priority={4}>
         <div
           style={{
             textAlign: "center",
