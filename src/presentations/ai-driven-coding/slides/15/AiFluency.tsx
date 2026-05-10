@@ -9,7 +9,7 @@ const useDaily = [
 ];
 
 const understandWhy = [
-  "Read the papers: transformers, RLHF, scaling",
+  "Read the papers: transformers, Reinforcement Learning from Human Feedback, scaling",
   "Follow agent & tool-use literature",
   "Build one small agent yourself",
 ];
