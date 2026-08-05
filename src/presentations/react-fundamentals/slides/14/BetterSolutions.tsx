@@ -1,21 +1,21 @@
 import { Appear, Box, CodePane } from "spectacle";
-import tomorrow from "react-syntax-highlighter/dist/cjs/styles/prism/tomorrow";
 import { leroyTheme } from "@/theme/leroy";
+import leroyCodeTheme from "../../helper/theme";
 
 const codeTheme = {
-  ...tomorrow,
+  ...leroyCodeTheme,
   'pre[class*="language-"]': {
-    ...tomorrow['pre[class*="language-"]'],
+    ...leroyCodeTheme['pre[class*="language-"]'],
     fontSize: "10px",
     lineHeight: "1.35",
     padding: "0.75rem",
     margin: 0,
   },
   'code[class*="language-"]': {
-      ...tomorrow['code[class*="language-"]'],
-      fontSize: "9px",
-      lineHeight: "1.3",
-    },
+    ...leroyCodeTheme['code[class*="language-"]'],
+    fontSize: "9px",
+    lineHeight: "1.3",
+  },
 };
 
 const CONTEXT_SOLUTION = `

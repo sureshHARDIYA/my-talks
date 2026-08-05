@@ -14,7 +14,72 @@ code {
     monospace;
 }
 
-/* Add this to your global CSS file */
-.spectacle-code-pane pre, .spectacle-code-pane code {
-  line-height: 1.2 !important; /* Force line-height to 1.2 */
+pre[class*="language-"] {
+  background: #0f172a !important;
+  color: #f4f7fb !important;
+  border-radius: 8px !important;
+  box-shadow: 0 10px 30px rgb(15 23 42 / 14%);
+}
+
+pre[class*="language-"] code[class*="language-"] {
+  background: transparent !important;
+  color: inherit !important;
+}
+
+pre[class*="language-"] span {
+  background: transparent !important;
+}
+
+pre[class*="language-"] [style*="opacity"] {
+  opacity: 1 !important;
+}
+
+pre[class*="language-"] .linenumber {
+  color: #94a3b8 !important;
+}
+
+pre[class*="language-"] .token.comment,
+pre[class*="language-"] .token.prolog,
+pre[class*="language-"] .token.doctype,
+pre[class*="language-"] .token.cdata {
+  color: #a5b4fc !important;
+}
+
+pre[class*="language-"] .token.punctuation {
+  color: #cbd5e1 !important;
+}
+
+pre[class*="language-"] .token.tag,
+pre[class*="language-"] .token.attr-name,
+pre[class*="language-"] .token.namespace,
+pre[class*="language-"] .token.deleted {
+  color: #7dd3fc !important;
+}
+
+pre[class*="language-"] .token.string,
+pre[class*="language-"] .token.char,
+pre[class*="language-"] .token.attr-value,
+pre[class*="language-"] .token.regex,
+pre[class*="language-"] .token.variable {
+  color: #86efac !important;
+}
+
+pre[class*="language-"] .token.keyword,
+pre[class*="language-"] .token.selector,
+pre[class*="language-"] .token.important,
+pre[class*="language-"] .token.atrule,
+pre[class*="language-"] .token.builtin {
+  color: #c4b5fd !important;
+}
+
+pre[class*="language-"] .token.function,
+pre[class*="language-"] .token.number,
+pre[class*="language-"] .token.boolean {
+  color: #fbbf24 !important;
+}
+
+pre[class*="language-"] .token.operator,
+pre[class*="language-"] .token.entity,
+pre[class*="language-"] .token.url {
+  color: #67e8f9 !important;
 }

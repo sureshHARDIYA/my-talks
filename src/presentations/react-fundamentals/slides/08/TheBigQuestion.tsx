@@ -1,18 +1,22 @@
 import { Appear, Box, CodePane } from "spectacle";
-import tomorrow from "react-syntax-highlighter/dist/cjs/styles/prism/tomorrow";
 import { Accordion } from "../../components/Accordion";
 import { leroyTheme } from "@/theme/leroy";
+import leroyCodeTheme from "../../helper/theme";
 
 const codeTheme = {
-  ...tomorrow,
+  ...leroyCodeTheme,
   'pre[class*="language-"]': {
-    ...tomorrow['pre[class*="language-"]'],
+    ...leroyCodeTheme['pre[class*="language-"]'],
     fontSize: "12px",
     lineHeight: "1.35",
     padding: "1.25rem 1.5rem",
     margin: 0,
   },
-  'code[class*="language-"]': { ...tomorrow['code[class*="language-"]'], fontSize: "12px", lineHeight: "1.35" },
+  'code[class*="language-"]': {
+    ...leroyCodeTheme['code[class*="language-"]'],
+    fontSize: "12px",
+    lineHeight: "1.35",
+  },
 };
 
 const lb = "{";
