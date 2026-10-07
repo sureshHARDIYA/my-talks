@@ -12,9 +12,6 @@ import Journey from "./slides/04/Journey";
 import Discussion1 from "./slides/05/Discussion1";
 import TestWhatHurts from "./slides/06/TestWhatHurts";
 import WhereTestsRun from "./slides/07/WhereTestsRun";
-import AiChangesEquation from "./slides/08/AiChangesEquation";
-import IndustryReport from "./slides/08b/IndustryReport";
-import NewWorkflow from "./slides/09/NewWorkflow";
 import Discussion2 from "./slides/10/Discussion2";
 import HowWeProceed from "./slides/11/HowWeProceed";
 
@@ -47,23 +44,11 @@ const TestingInTheAgeOfAi = () => (
         <WhereTestsRun />
       </DbSlide>
 
-      <DbSlide number="6" title="What the industry reports">
-        <IndustryReport />
-      </DbSlide>
-
-      <DbSlide number="7" title="Then AI changes the equation">
-        <AiChangesEquation />
-      </DbSlide>
-
-      <DbSlide number="8" title="A workflow that starts with what must be true">
-        <NewWorkflow />
-      </DbSlide>
-
       <DbSlide title="Your turn, again">
         <Discussion2 />
       </DbSlide>
 
-      <DbSlide number="9" title="How we proceed now">
+      <DbSlide number="6" title="How we proceed now">
         <HowWeProceed />
       </DbSlide>
     </Deck>

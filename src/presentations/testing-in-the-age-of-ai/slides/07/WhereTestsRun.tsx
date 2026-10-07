@@ -67,7 +67,7 @@ const WhereTestsRun = () => (
       <Source>European respondents name integrating testing into CI/CD pipelines as their top obstacle (36 %). Forrester Consulting for Worksoft, June 2026.</Source>
     </Appear>
     <Appear priority={7}>
-      <Bridge>Is this only our problem?</Bridge>
+      <Bridge>And when AI writes the code and the tests, what changes?</Bridge>
     </Appear>
   </div>
 );
