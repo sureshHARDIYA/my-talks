@@ -57,6 +57,11 @@ const presentations = [
     id: "09",
     title: "AI-Driven Software Development",
     path: "/ai-driven-coding",
+  },
+  {
+    id: "10",
+    title: "Testing the Right Things in the Age of AI",
+    path: "/testing-in-the-age-of-ai",
     CURRENT: true,
   },
 ] satisfies Presentation[];
@@ -71,8 +76,8 @@ export const MainGate = () => {
           alignItems="stretch"
           justifyContent="flex-start"
           style={{
-            padding: "2rem",
-            gap: "2rem",
+            padding: "1.5rem 2rem",
+            gap: "1.25rem",
           }}
         >
           <Heading
@@ -87,8 +92,8 @@ export const MainGate = () => {
           <div
             style={{
               display: "grid",
-              gridTemplateColumns: "repeat(3, minmax(0, 1fr))",
-              gap: "1rem",
+              gridTemplateColumns: "repeat(4, minmax(0, 1fr))",
+              gap: "0.75rem",
               width: "100%",
             }}
           >
@@ -107,11 +112,11 @@ export const MainGate = () => {
                   borderRadius: "16px",
                   color: item.CURRENT ? leroyTheme.white : leroyTheme.textBlue,
                   display: "flex",
-                  fontSize: "1.1rem",
+                  fontSize: "0.95rem",
                   fontWeight: 700,
                   justifyContent: "center",
-                  minHeight: "120px",
-                  padding: "1rem",
+                  minHeight: "80px",
+                  padding: "0.75rem",
                   textAlign: "center",
                   textDecoration: "none",
                 }}

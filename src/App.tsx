@@ -10,6 +10,7 @@ import NordicDesignSystem from "./presentations/nordic-design-system";
 import ReactFundamentals from "./presentations/leroy/react-fundamentals";
 import MicrofrontendArchitectureInLeroy from "./presentations/leroy/microfrontend-architecture";
 import AiDrivenCoding from "./presentations/ai-driven-coding";
+import TestingInTheAgeOfAi from "./presentations/testing-in-the-age-of-ai";
 
 function App() {
   return (
@@ -34,6 +35,10 @@ function App() {
           element={<MicrofrontendArchitectureInLeroy />}
         />
         <Route path="/ai-driven-coding" element={<AiDrivenCoding />} />
+        <Route
+          path="/testing-in-the-age-of-ai"
+          element={<TestingInTheAgeOfAi />}
+        />
       </Routes>
     </BrowserRouter>
   );
