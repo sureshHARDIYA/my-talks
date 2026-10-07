@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Local talk source material (PPTX, PDF)
+talk ideas/
